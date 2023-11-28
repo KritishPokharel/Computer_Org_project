@@ -14,6 +14,13 @@ input_loop:
     syscall
     move $t0, $v0
 
+    bge $t0, 25, fibonacci_sequence
+    li $v0, 4
+    la $a0, error_display
+    syscall
+    j input_loop
+
+
 
     
 
