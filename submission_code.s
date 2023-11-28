@@ -46,6 +46,10 @@ fibonacci_loop:
 
     j fibonacci_loop
 exit_code:
+    li $v0, 1
+    move $a0, $t1
+    syscall
+
     li $v0, 10
     syscall
 
