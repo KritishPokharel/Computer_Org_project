@@ -34,6 +34,12 @@ fibonacci_loop:
     move $a0, $t1
     syscall
 
+    add $t4, $t1, $t2
+    move $t1, $t2
+    move $t2, $t4
+    addi $t3, $t3, 1
+
+
 
     
 
