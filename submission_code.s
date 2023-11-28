@@ -44,6 +44,11 @@ fibonacci_loop:
     syscall
     bge $t3, $t0, exit_code
 
+    j fibonacci_loop
+exit_code:
+    li $v0, 10
+    syscall
+
 
 
 
