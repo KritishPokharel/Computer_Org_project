@@ -29,6 +29,12 @@ fibonacci_sequence:
     la $a0, fib_display
     syscall
 
+fibonacci_loop:
+    li $v0, 1
+    move $a0, $t1
+    syscall
+
+
     
 
 
