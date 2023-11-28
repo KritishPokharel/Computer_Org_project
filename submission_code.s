@@ -25,6 +25,12 @@ fibonacci_sequence:
     li $t2, 1
     li $t3, 0
 
+    li $v0, 4
+    la $a0, fib_display
+    syscall
+
+    
+
 
 
 
