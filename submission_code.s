@@ -39,6 +39,12 @@ fibonacci_loop:
     move $t2, $t4
     addi $t3, $t3, 1
 
+    li $v0, 11
+    li $a0, 32
+    syscall
+    bge $t3, $t0, exit_code
+
+
 
 
     
